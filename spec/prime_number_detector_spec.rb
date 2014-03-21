@@ -5,5 +5,8 @@ describe PrimeNumberDetector do
     detector = PrimeNumberDetector.new
     expect(detector.prime_number?(3)).to eq true
   end
-  it "recogizes if something is not a prime number"
+  it "recogizes if something is not a prime number" do
+    detector = PrimeNumberDetector.new
+    expect(detector.prime_number?(10)).to eq false
+  end
 end
